@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as getter from '../data/getFilms';
+import 'semantic-ui-css/semantic.min.css'
+
 
 export default function Films() {
 

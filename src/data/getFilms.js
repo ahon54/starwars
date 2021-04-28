@@ -46,5 +46,19 @@ async function getDataFromId(id) {
 }
 //getDataFromId().then(console.log)
 
+const getDetails = (url) => {
+    return axios({
+        method: 'GET',
+        url: `${url}`
+    });
+};
 
-export { getDataFromSever, getAllFilms, getDataFromId };
+const getVehicles = (url) => {
+    return axios({
+        method: 'GET',
+        url: `${url}`
+    })
+}
+export { getDataFromSever, getAllFilms, getDataFromId, getDetails, getVehicles };
+
+//use promises.all
